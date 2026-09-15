@@ -11,12 +11,7 @@ A collection of **6 standalone Eaglercraft modpacks** compiled entirely as singl
 ## 📁 Repository Structure
 
 ```text
-├── Eagler_Modpack_1.html  # First custom browser modpack
-├── Eagler_Modpack_2.html  # Second custom browser modpack
-├── Eagler_Modpack_3.html  # Third custom browser modpack
-├── Eagler_Modpack_4.html  # Fourth custom browser modpack
-├── Eagler_Modpack_5.html  # Fifth custom browser modpack
-├── Eagler_Modpack_6.html  # Sixth custom browser modpack
+├── index.html  # download custom browser modpack
 └── README.md              # Project documentation
 ```
 
