@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛧ OnyxSoul // Eaglercrafts Modpacks</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0c;
+            --card-bg: #111115;
+            --accent-color: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.4);
+            --neon-green: #10b981;
+            --text-main: #e2e8f0;
+            --text-muted: #64748b;
+            --terminal-border: #22222b;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(rgba(18, 18, 24, 0.9) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(18, 18, 24, 0.9) 0.1em, transparent 0.1em);
+            background-size: 20px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px dashed var(--accent-color);
+            padding: 20px 40px;
+            background: rgba(17, 17, 21, 0.8);
+            box-shadow: 0 0 15px var(--accent-glow);
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: var(--neon-green);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1050px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--terminal-border);
+            border-radius: 6px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background-color: var(--terminal-border);
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+        }
+
+        .card:hover::before {
+            background-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card h3::after {
+            content: '[READY]';
+            font-size: 0.75rem;
+            color: var(--neon-green);
+            font-weight: normal;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .download-btn {
+            display: block;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            text-decoration: none;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+            box-shadow: inset 0 0 0 0 var(--accent-color);
+        }
+
+        .download-btn:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            box-shadow: 0 0 10px var(--accent-glow);
+            cursor: pointer;
+        }
+
+        .tip-box {
+            max-width: 1010px;
+            width: 100%;
+            border: 1px solid #eab308;
+            background: rgba(234, 179, 8, 0.05);
+            padding: 15px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .tip-box p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #fde047;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--terminal-border);
+            padding-top: 25px;
+            width: 100%;
+            max-width: 1050px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>⛧ Eaglercrafts Modpacks</h1>
+        <p class="subtitle">SYSTEM STATUS: ALL CORE MODULES OPERATIONAL // OFFLINE STANDALONE PACKS</p>
+    </header>
+
+    <div class="tip-box">
+        <p><strong>⚠️ DIRECT DOWNLOAD INSTRUCTION:</strong> Because these files are hosted directly on drive, <strong>download it only</strong> and done <strong>"PLAY AND HAVE FUN"</strong> and thanks for reading this.</p>
+    </div>
+
+    <main class="grid">
+        <!-- Modpack 1 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Ultimate</h3>
+                <p>Standalone custom browser modpack configuration. Play fully offline inside any browser tab.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1xAzHJ8TChdMrPhAJRmXpAIyOOEa3btfl/view?usp=sharing" download="Eaglercraft Ultimate.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+
+        <!-- Modpack 2 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Lite</h3>
+                <p>Custom standalone client assembly optimized for fast browser rendering and low-end devices.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1MXHzfe_pvAc0aq2ZfIcfJhrE4d5etB5E/view?usp=sharing" download="Eaglercraft Lite.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+
+        <!-- Modpack 3 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Tech</h3>
+                <p>Pre-configured setup packed with performance tweaks, optimized for Chromebooks and school networks.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1h8CHw-KRcpepaGDa0tMGE9piqeZcTMaR/view?usp=sharing" download="Eaglercraft Tech.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+
+        <!-- Modpack 4 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Magic</h3>
+                <p>Fully functional browser sandbox utility built for customizable resource pack injection.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1kBxBsbaOhk-1gmkx1iAnYoziTHooWjVf/view?usp=sharing" download="Eaglercraft Magic.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+
+        <!-- Modpack 5 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Vanilla</h3>
+                <p>Action-oriented offline optimization setup with built-in UI tweaks and custom HUD changes.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1_FUV9Ma8ZVO9HvvcgiHnPfczcAxdjUkl/view?usp=sharing" download="Eaglercraft Vanilla.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+
+        <!-- Modpack 6 -->
+        <div class="card">
+            <div>
+                <h3>Eagler Skyfactory</h3>
+                <p>The ultimate lightweight offline layout environment compilation. Open and play instantly.</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1I93q8JtkeN_4lfUKq6udDz2AD_O17UJr/view?usp=sharing" download="Eaglercraft Skyfactory.html" class="download-btn">GET SOURCE // 55MB</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by <strong>OnyxSoul-1</strong> & <strong>🐱 CAT</strong> | Deployments registered on <a href="https://github.com/OnyxSoul-1" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
