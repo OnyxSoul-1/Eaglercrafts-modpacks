@@ -1,4 +1,4 @@
-# 🦅 Eaglercrafts-Modpacks
+# ⛧ Eaglercrafts-Modpacks
 
 A collection of **6 standalone Eaglercraft modpacks** compiled entirely as single HTML files. No installation, server setups, or extra software required—just open an HTML file in your web browser and start playing fully modded environments instantly.
 
